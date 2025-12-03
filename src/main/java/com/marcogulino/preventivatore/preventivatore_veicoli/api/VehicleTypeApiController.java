@@ -30,8 +30,8 @@ public class VehicleTypeApiController {
     // INFO: READ
     @GetMapping
     public List<VehicleType> index() {
-        List<VehicleType> vehicles = vehicleTypeService.findAll();
-        return vehicles;
+        List<VehicleType> vehicleTypes = vehicleTypeService.findAll();
+        return vehicleTypes;
     }
 
     // INFO: READ By ID
