@@ -21,7 +21,7 @@ import lombok.Setter;
 public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @NotBlank(message = "The brand name must not be blank, empty or null")
     @Size(max = 100, message = "The brand name cannot exceed 100 characters")

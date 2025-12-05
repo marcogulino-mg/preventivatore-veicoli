@@ -19,7 +19,7 @@ import lombok.Setter;
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @NotBlank(message = "The firstname must not be blank, empty or null")
     @Column(name = "firstname", length = 50, nullable = false)

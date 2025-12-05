@@ -21,7 +21,7 @@ public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @NotBlank(message = "The role name must not be blank, empty or null")
     @Column(name = "role_name", unique = true, nullable = false)

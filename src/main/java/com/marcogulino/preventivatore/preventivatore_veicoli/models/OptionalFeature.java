@@ -25,7 +25,7 @@ public class OptionalFeature {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @NotBlank(message = "The optional name must not be blank or null")
     @Size(max = 100, message = "The optional name cannot exceed 100 characters")

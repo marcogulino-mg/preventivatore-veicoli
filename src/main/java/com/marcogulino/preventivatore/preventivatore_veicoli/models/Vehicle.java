@@ -21,7 +21,7 @@ import lombok.Setter;
 public class Vehicle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @NotBlank(message = "The model name must not be blank or null")
     @Size(max = 150)

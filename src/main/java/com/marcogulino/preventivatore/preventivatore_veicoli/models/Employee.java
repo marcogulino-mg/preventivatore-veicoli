@@ -20,7 +20,7 @@ import lombok.Setter;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @NotBlank(message = "The username must not be blank, empty or null")
     @Column(name = "username", nullable = false, length = 100, unique = true)

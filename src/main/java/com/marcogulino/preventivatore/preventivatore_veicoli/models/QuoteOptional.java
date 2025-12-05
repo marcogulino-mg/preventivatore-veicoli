@@ -21,7 +21,7 @@ public class QuoteOptional {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @NotNull
     @Column(name = "price_at_time", precision = 8, scale = 2, nullable = false)
